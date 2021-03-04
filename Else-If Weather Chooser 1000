@@ -1,0 +1,10 @@
+const weather = prompt ("What's the weather today?");
+
+if (weather === 'sun') {
+ console.log ("Whoa, some sun? Better make the most of it!");
+} else if (weather === 'cloud') {
+ console.log ("Ahh, cloudy, a perfect day for productive misery.");
+} else if (weather === 'rain'){
+ console.log ("Since it's raining, I'll sleep.");
+}
+document.querySelector ('main').innerHTML = weather; 
