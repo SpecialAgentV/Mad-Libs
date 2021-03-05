@@ -1,0 +1,61 @@
+let score = 0;
+const A1 = "Bun Bed";
+const Q1 = prompt("Where does the moon go to sleep?");
+if (Q1 === A1){score += 1; 
+console.log(score);
+} else {score += 0;
+ console.log ('wrong');
+}
+const A2 = "Higher than you";
+const Q2 = prompt("How high can you jump?");
+if (Q2===A2){score += 1;
+console.log(score);
+} else {score += 0;
+  console.log ('wrong')
+}
+const A3 = "Yes";
+const Q3 = prompt("Should you succeed in life?");
+if (Q3===A3){score += 1;
+console.log(score);
+} else {score += 0;
+ console.log ('wrong')
+}
+const A4 = "For the 6th time";
+const Q4 = prompt("Did you forget Muffin?");
+if (Q4===A4){score += 1;
+console.log(score);
+} else {score += 0;
+ console.log ('wrong')
+}
+const A5 = "Always";
+const Q5 = prompt("Are you sorry?");
+if (Q5===A5){score += 1;
+console.log(score);
+} else {score += 0;
+  console.log ('wrong')
+}
+let results = score;
+  console.log (score);
+
+
+if (score === 5){ 
+  score = "Gold";
+  console.log("You've earned a Gold Star!");
+
+} else if (score === 3 || score === 4) {
+  score = "Silver";
+  console.log ("You've earned a Silver Star!");
+ 
+}else if (score === 1 || score === 2) {
+  score = "Bronze";
+   console.log ("You've earned a Bronze Star!");
+ 
+} else if (score === 0) {
+  score = "A Planet";
+   console.log ("You better get your act together!");
+  document.write ("<h2>You better get your act together!</h2>");
+}
+const Out = (`You've gotten ${results} out of 5 questions correct. 
+Star earned: ${score}`);
+console.log (Out);
+document.write (Out);
