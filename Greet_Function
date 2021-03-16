@@ -1,0 +1,16 @@
+//there are multiple ways to code the same thing. Let's practice Arrow vs Declarative 
+
+function Greet (greeting = 'Good morning', name = 'student') { //default parameters should nothing be input
+  return `${greeting} my little ${name}`;
+}
+// remember to use '' when calling the function
+
+//Arrow Form
+const Yeet = (greet = 'Good morning', name = 'student') => `${greeting}, my delicate ${name}`; 
+// there are multiple parameters: use ()
+// no need for {} since it's one line of body 
+// anonymous function so set variable equal to parameter
+// arrow goes after parameter into body 
+//default is there if no input is given
+// variables will be filled in in the order they are given 
+// to use default value add undefined w/o quotes to pass over the variable 
